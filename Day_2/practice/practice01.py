@@ -19,6 +19,7 @@ def reg():
         f.write(user_str)
         f.close()
 
+
 def login():
     with open('user.txt','r') as f:
         data = json.loads(f.read())

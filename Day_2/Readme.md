@@ -18,8 +18,8 @@
 - 查询
     - in:元素是否在列表中
 - 排序
-    - list.sort():从小到大排序
-    - list.sort(reverse=True):从大到小排序
+    - sort():从小到大排序
+    - sort(reverse=True):从大到小排序
 ## tuple -- 元组
 - 定义
     - a(1,)
@@ -85,7 +85,7 @@ with open(r'C:\Users\Administrator\Desktop\新建文本文档.txt',mode='r') as 
 - 函数分类
     - 内置函数
     - 自定义函数
-    - pass - 空函数
+    - 空函数（pass）
 - 函数的定义
 ```
 def 函数名():
