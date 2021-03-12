@@ -22,7 +22,8 @@ def reg():
 
 def login():
     with open('user.txt','r') as f:
-        data = json.loads(f.read())
+        # data = json.loads(f.read())
+        data = json.load(f)
         user_name = data.get('username')
         pass_word = data.get('password')
 
@@ -44,5 +45,6 @@ def login():
     else:
         print('三次机会已经用完啦！')
 
-reg()
+# reg()
 login()
+
