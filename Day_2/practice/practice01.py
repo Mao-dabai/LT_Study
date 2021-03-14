@@ -7,8 +7,9 @@ Project:
 # 要求结果如下：
 # 三次登陆功能+函数 + 文件操作
 # 注册登录的模块
-import json
 
+# 第一种方式
+import json
 
 def reg():
     username = input('请输入您注册的用户名：')
@@ -18,7 +19,6 @@ def reg():
     with open('user.txt','w',encoding='utf-8') as f:
         f.write(user_str)
         f.close()
-
 
 def login():
     with open('user.txt','r') as f:
@@ -46,5 +46,34 @@ def login():
         print('三次机会已经用完啦！')
 
 # reg()
-login()
+# login()
 
+
+# 第二种方式
+
+def reg_1():
+    with open('user_1.txt',mode='w',encoding='utf-8') as f:
+        name = input('请输入您要注册的用户名：')
+        pwd = input('请输入您的注册密码：')
+        f.write('{}\n{}'.format(name,pwd))
+        f.close()
+        print('注册成功！！！')
+
+
+def login_1():
+    lis = []
+    i = 0
+    while i<3:
+        name = input('请输入您用户名：')
+        pwd = input('请输入您的密码：')
+        with open('user_1.txt',mode='r',encoding='utf-8') as f:
+            for l in f:
+                lis.append(l.strip())
+        if name == lis[0] and pwd == lis[1]:
+            print('登录成功！！！')
+            break
+        else:
+            print('用户名密码错误！！！')
+        i+= 1
+reg_1()
+login_1()

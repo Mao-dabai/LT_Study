@@ -5,5 +5,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Day_2" />
+    <orderEntry type="module" module-name="Day_3" />
   </component>
 </module>
