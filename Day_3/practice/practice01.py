@@ -7,18 +7,22 @@ Project:
 # 通过类创建几个不同的对象，打印他们的属性，调用方法
 
 
-class Car():
-    def __init__(self, color, mali, mode):
+class Person:
+    def __init__(self,color,regional,faith):
         self.color = color
-        self.mali = mali
-        self.mode = mode
+        self.regional = regional
+        self.faith = faith
 
+    def introduce(self):
+        print('%s主要分布在%s，他们信奉%s!!'%(self.color,self.regional,self.faith))
 
-    def move(self):
-        print('%s的%s以%d马力的速度在飞速行驶'% (self.color,self.mode,self.mali))
+class  Information(Person):
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+        Person.__init__(self,color='黄种人',regional='北方地区',faith='佛教')
+    def basic_inf(self):
+        print('%d岁的%s是'%(self.age,self.name),end=''),self.introduce()
 
-BMW_X9 = Car('红色', 200,'宝马X9')
-BMW_X9.move()
-
-list = [1,2,3,45,6]
-print(list[10:])
+Mr_li = Information('李四',28)
+Mr_li.basic_inf()
