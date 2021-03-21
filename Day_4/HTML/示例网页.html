@@ -1,0 +1,66 @@
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <title>我的示例网页</title>
+    </head>
+    <body>
+        <div id="d1" name="div1" class="cl1">
+            第一行内容
+        </div>
+        <form action="/api/profile" method="post">
+            姓名：<input name="username" type="text" placeholder="请输入姓名"/>  <!placeholder是提示语>
+            密码：<input name="password" type="password" placeholder="请输入密码"/>
+            <br/>
+            <!-- radio:单选 -->
+            男<input name="gender" type="radio" value="1"/> 女<input name="gender" type="radio" value="2"/>
+            <br/>
+            <!-- checkbox:多选 -->
+            篮球<input type="checkbox" name="hobby" value="basketball"/>
+            音乐<input type="checkbox" name="hobby" value="music"/>
+            追剧<input type="checkbox" name="hobby" value="After play"/>
+            摄影<input type="checkbox" name="hobby" value="photography"/>
+            <br/>
+            上传框
+            <input type="file" style="display: none;">
+            <br/>
+            <input type="button" value="确定">
+            <br/>
+            <textarea name="body"></textarea>  <!textarea:多行文本>
+            <!-- select:选择 -->
+            <br/>
+            <select name="city">
+                <!-- option:选项 -->
+                <option value="beijing">北京</option>
+                <option value="shanghai">上海</option>
+                <option value="tianjin">天津</option>
+            </select>
+            <button>确定</button>
+            <input type="submit" disabled>
+        </form>
+        <form>
+        <h1>一级标题</h1>
+        <h2>二级标题</h2>
+        <div>布局标签-独占一行</div>
+        <span>文字块1</span>
+        <span>文字块2</span>
+        <p>一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字</p>
+
+        <a href="www.baidu.com">百度一下</a>
+        <img src="https://www.baidu.com/s?wd=%E4%BB%8A%E6%97%A5%E6%96%B0%E9%B2%9C%E4%BA%8B&tn=SE_PclogoS_8whnvm25&sa=ire_dl_gh_logo&rsv_dl=igh_logo_pcs" />
+        <!-- 无序列表 -->
+        <ul>
+            <li>篮球</li>
+            <li>音乐</li>
+            <li>摄影</li>
+        </ul>
+        <!-- 有序列表 -->
+        <ol>
+            <li>篮球</li>
+            <li>音乐</li>
+            <li>摄影</li>
+        </ol>
+
+        </form>
+    </body>
+</html>
