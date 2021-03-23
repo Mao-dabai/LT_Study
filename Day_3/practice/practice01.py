@@ -26,3 +26,17 @@ class  Information(Person):
 
 Mr_li = Information('李四',28)
 Mr_li.basic_inf()
+
+a = '12323aab'
+print(a.isdigit())
+
+
+c = 'I am the whole world'
+d = c.split(' ')
+d = d[::-1]
+print(" ".join(d))
+
+
+b = {'Kevin': 21, 'Lily': 19, 'John': 20}
+
+

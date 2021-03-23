@@ -18,9 +18,10 @@ sleep(2)
 driver.find_element_by_class_name('Close').click()
 
 # alert弹窗 -- switch_to.alert
-
-
-
+import time
+A = driver.find_element_by_partial_link_text()
+a = str(time.time())
+A.screenshot('D:a')
 # 新窗口  -- switch_to.window(new_window_handel)
 
 
