@@ -35,6 +35,7 @@ def start(browser):
     return driver
 
 # 4、封装一个元素查找方法,传入driver,定位方式，定位表达式（元素属性），根据定位方式进行定位，并返回定位到的元素。
+@start
 def find(driver,by,value):
     if by == 'id':
         A = driver.find_element_by_id(value)

@@ -14,12 +14,11 @@ driver.implicitly_wait(30)
 
 driver.find_element_by_link_text('登录').click()
 driver.find_element_by_class_name('btn-primary').click()
-
 driver.find_element_by_id('username').send_keys('13582105112')
 driver.find_element_by_id('pwd').send_keys('xk940819zj')
 driver.find_element_by_id('login-button').click()
 
-driver.find_element_by_id('search').clear()
+# driver.find_element_by_id('search').clear()
 driver.find_element_by_id('search').send_keys('小米电视')
 driver.find_element_by_class_name('search-btn').click()
 
