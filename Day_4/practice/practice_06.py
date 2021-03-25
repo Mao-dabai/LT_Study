@@ -37,7 +37,7 @@ driver.find_element_by_link_text('去购物车结算').click()
 sleep(1)
 driver.find_element_by_link_text('去结算').click()
 
-# 添加收货地
+# 添加收货地址
 sleep(3)
 driver.find_element_by_class_name('address-list').find_elements_by_class_name('address-item')[-1].click()
 driver.find_element_by_name('name').send_keys('三爷')
