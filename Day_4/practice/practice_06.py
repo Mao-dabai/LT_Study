@@ -43,20 +43,24 @@ driver.find_element_by_class_name('address-list').find_elements_by_class_name('a
 driver.find_element_by_name('name').send_keys('三爷')
 driver.find_element_by_name('telephone').send_keys('13582105112')
 driver.find_element_by_name('address').click()
-driver.find_element_by_name('search').send_keys('北京 华润五彩城')
+driver.find_element_by_name('search').send_keys('北京市华润五彩城')
 sleep(1)
-driver.find_element_by_class_name('result-list').find_elements_by_class_name('item-info')[0].find_element_by_link_text('选择').click()
+
+driver.find_element_by_class_name('result-box').find_element_by_class_name('result-list').find_elements_by_class_name('item-info')[0].find_element_by_link_text('选择').click()
+# driver.find_element_by_class_name('result-list').find_elements_by_class_name('item-info')[0].find_element_by_link_text('选择').click()
 driver.find_element_by_name('addressInfo').send_keys('华润五彩城4层')
 driver.find_element_by_class_name('el-dialog__footer').find_elements_by_class_name('btn-primary')[0].click()
 
+
+# 下单后取消订单
 driver.find_element_by_link_text('立即下单').click()
-
-
 driver.find_element_by_link_text('我的订单').click()
 driver.switch_to.window(driver.window_handles[-1])
 driver.find_elements_by_class_name('order-actions')[0].find_element_by_link_text('订单详情').click()
 driver.find_element_by_link_text('取消订单').click()
 driver.find_element_by_class_name('el-dialog__footer').find_element_by_class_name('btn-primary').click()
+sleep(3)
+driver.save_screenshot(r'D:\LTTest_Study\Day_4\picture\xiaomi.png')
 
 driver.quit()
 
