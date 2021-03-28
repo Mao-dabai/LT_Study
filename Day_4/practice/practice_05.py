@@ -10,8 +10,19 @@ print('l的列表反转结果：',l[::-1])
 l.sort()
 print('l的列表排序结果：',l)
 print('l的去重结果：',set(l))
+# 第一种方法
 for i in set(l):
     print('%s的出现个数为%d次'%(i,l.count(i)))
+
+# 第二种方法：itertools使用
+from  itertools import groupby
+l.sort()
+print(l)
+for name,group in groupby(l,key=lambda x:x):
+    print(name,len(list(group)))
+
+
+
 
 # 2、两个不重复列表a1=[1,2,5,6,8,9] a2=[2,3,5,6,1,4,3,7]，找到其中相加为10的
 a1 = [1,2,5,6,8,9]
@@ -23,6 +34,7 @@ for i in a1:
 
 # 3、封装一个函数，根据传入的参数如’chrome’，来启动不同的浏览器，并返回driver
 from  selenium  import webdriver
+
 def start(browser):
     if browser == 'chrome':
         driver = webdriver.Chrome()
@@ -35,7 +47,6 @@ def start(browser):
     return driver
 
 # 4、封装一个元素查找方法,传入driver,定位方式，定位表达式（元素属性），根据定位方式进行定位，并返回定位到的元素。
-@start
 def find(driver,by,value):
     if by == 'id':
         A = driver.find_element_by_id(value)

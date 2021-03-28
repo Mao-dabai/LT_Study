@@ -43,7 +43,7 @@
 - 弹窗分类及定位
     - 模态框/div弹窗/DOM框：直接定位
     - alert弹窗框：switch_to.alert
-    - conform弹窗：
+    - conform弹窗：直接在url中添加值
     - 弹出新页面:switch_to.window(new_window_handel)
 
 
