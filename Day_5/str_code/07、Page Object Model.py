@@ -3,6 +3,7 @@
 @author: 猫大白
 Project:POM
 '''
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.keys import Keys
@@ -40,4 +41,3 @@ class LoginPage:
 
     def click_login_btn(self):
         self.driver.find_element(*self.login_btn).click()
-

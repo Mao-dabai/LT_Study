@@ -3,10 +3,12 @@
 @author: 猫大白
 Project:Select下拉框
 '''
+# 仅限于select元素
 from time import sleep
 
 from selenium   import webdriver
 from selenium.webdriver.support.select import Select
+
 
 driver = webdriver.Chrome()
 driver.maximize_window()
