@@ -41,3 +41,5 @@ class LoginPage:
 
     def click_login_btn(self):
         self.driver.find_element(*self.login_btn).click()
+
+
