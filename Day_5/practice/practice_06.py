@@ -1,7 +1,7 @@
 # coding:utf-8
 '''
 @author: 猫大白
-Project:
+Project:POM实现商品添加、查看、删除操作
 '''
 from time import sleep
 
