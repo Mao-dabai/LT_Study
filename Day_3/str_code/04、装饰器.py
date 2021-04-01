@@ -6,7 +6,7 @@ Project:Python的装饰器相关
 
 # 基础装饰器
 
-def deco(func):
+def deco1(func):
     print('装饰器func')  # 在函数执行前增加一个处理过程
     return func
 
@@ -39,3 +39,6 @@ def add(a:int,b:int):
     return a+b
 
 add(1,"2")
+
+
+# TODO 闭包
