@@ -42,5 +42,3 @@ for i in list_b:
 
 for i in range(10):
     print(i)
-
-json.dump()

@@ -8,5 +8,10 @@
     <orderEntry type="module" module-name="Day_3" />
     <orderEntry type="module" module-name="Day_4" />
     <orderEntry type="module" module-name="Day_5" />
+    <orderEntry type="module" module-name="Day_6" />
+    <orderEntry type="module" module-name="WebAuto" />
+  </component>
+  <component name="PackageRequirementsSettings">
+    <option name="requirementsPath" value="" />
   </component>
 </module>
