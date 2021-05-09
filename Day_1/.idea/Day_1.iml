@@ -10,6 +10,7 @@
     <orderEntry type="module" module-name="Day_5" />
     <orderEntry type="module" module-name="Day_6" />
     <orderEntry type="module" module-name="WebAuto" />
+    <orderEntry type="module" module-name="MI_WebUI" />
   </component>
   <component name="PackageRequirementsSettings">
     <option name="requirementsPath" value="" />
