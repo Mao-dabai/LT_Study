@@ -16,6 +16,7 @@
     <orderEntry type="module" module-name="Day_09" />
     <orderEntry type="module" module-name="AppAuto" />
     <orderEntry type="module" module-name="AppAutoRobot" />
+    <orderEntry type="module" module-name="Day_10" />
   </component>
   <component name="PackageRequirementsSettings">
     <option name="requirementsPath" value="" />
