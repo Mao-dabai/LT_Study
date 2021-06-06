@@ -1,0 +1,15 @@
+appium_server: 'http://localhost:4723/wd/hub'
+
+apps:  # 被测应用
+  mishop:
+    appPackage: com.xiaomi.shop
+    appActivity: .activity.MainTabActivity
+#  settings:
+#    appPackage: com.xiaomi.shop
+#    appActivity:
+
+devices:  # 设备列表
+  MuMu:
+    platformName: Android
+    platformVersion: 7.1.2
+    udid: 127.0.0.1:62001
